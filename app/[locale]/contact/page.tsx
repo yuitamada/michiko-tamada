@@ -25,7 +25,7 @@ export default async function ContactPage({ params }: Props) {
         {c.intro}
       </p>
 
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" className="space-y-8">
+      <form action="https://formspree.io/f/xkoyndko" method="POST" className="space-y-8">
         <div>
           <label className="block text-[10px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
             {c.name} <span className="text-red-400">*</span>
