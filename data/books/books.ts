@@ -82,7 +82,9 @@ export const books: Book[] = [
       "「一見おにぎりに見えないけれど、じつはおにぎり」——そんなギリギリおにぎりを発掘するためのオーディションが開催される。てんむす、はんぺんのバター焼き、スパムむすびらが「ギリギリオニギリーズ」のメンバー選考に挑む、ユーモアたっぷりの写真絵本。紙粘土で制作された立体おにぎりをキッチンミノルさんが撮影。",
     descriptionEn:
       "An audition is held to find the greatest 'borderline onigiri' — rice balls that barely qualify as onigiri. Tenmasu, pan-fried hanpen, and spam musubi compete for membership in the 'Girigiri Onigiriizu' in this delightfully absurd photo picture book featuring clay-sculpted rice balls photographed by Kitchen Minoru.",
-    awards: [],
+    awards: [
+      "第18回MOE絵本屋さん大賞2025 第21位",
+    ],
     tags: ["幼児〜小学低学年", "ユーモア", "食べ物", "写真絵本"],
     links: {
       publisherPage: "https://www.hakusensha.co.jp/booklist/75517/",
