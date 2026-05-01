@@ -26,6 +26,7 @@ export default async function ContactPage({ params }: Props) {
       </p>
 
       <form action="https://formspree.io/f/xkoyndko" method="POST" className="space-y-8">
+        <input type="hidden" name="_next" value={`https://michikotamada.com/${locale}/contact/thanks`} />
         <div>
           <label className="block text-[10px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
             {c.name} <span className="text-red-400">*</span>
