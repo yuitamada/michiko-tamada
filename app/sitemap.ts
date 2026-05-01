@@ -3,7 +3,7 @@ import { locales } from "@/lib/i18n";
 import { books } from "@/data/books/books";
 import { getAllNews } from "@/lib/news";
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://michiko-tamada.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://michikotamada.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [];

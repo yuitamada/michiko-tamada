@@ -8,7 +8,7 @@ const noto = Noto_Sans_JP({
   display: "swap",
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://michiko-tamada.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://michikotamada.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
