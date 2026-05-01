@@ -17,8 +17,8 @@ function parseContent(raw: string, locale: Locale): { title: string; content: st
   const { data, content } = matter(raw);
   const [jaContent, enContent] = content.split("<!-- en -->");
   return {
-    title: locale === "en" && data.titleEn ? (data.titleEn as string) : (data.title as string),
-    content: locale === "en" && enContent ? enContent.trim() : jaContent.trim(),
+    title: locale !== "ja" && data.titleEn ? (data.titleEn as string) : (data.title as string),
+    content: locale !== "ja" && enContent ? enContent.trim() : jaContent.trim(),
   };
 }
 
