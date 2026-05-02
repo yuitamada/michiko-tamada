@@ -44,6 +44,7 @@ export default function Header({ locale }: Props) {
     { label: d.nav.news, href: `/${locale}/news` },
     { label: d.nav.media, href: `/${locale}/media` },
     { label: d.nav.events, href: `/${locale}/events` },
+    { label: d.nav.shop, href: `/${locale}/shop` },
     { label: d.nav.contact, href: `/${locale}/contact` },
   ];
 

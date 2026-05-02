@@ -154,7 +154,7 @@ const contactCategories = {
 export const dict = {
   ja: {
     lang: "ja",
-    nav: { profile: "プロフィール", books: "作品", news: "お知らせ", media: "メディア", events: "イベント", contact: "お問い合わせ" },
+    nav: { profile: "プロフィール", books: "作品", news: "お知らせ", media: "メディア", events: "イベント", shop: "ショップ", contact: "お問い合わせ" },
     footer: { role: "絵本作家" },
     home: {
       role: "絵本作家",
@@ -205,11 +205,16 @@ export const dict = {
       privacy: "ご入力いただいた個人情報は、お問い合わせへの返信のみに使用し、第三者への提供は行いません。",
       submit: "送信する", categories: contactCategories.ja,
     },
+    shop: {
+      section: "ショップ", heading: "オンラインショップ",
+      buy: "購入する", comingSoon: "準備中", soldOut: "売り切れ",
+      note: "※ 購入ページはSquareのサービスを利用しています。別ウィンドウで開きます。",
+    },
     notFound: { code: "404", heading: "ページが見つかりません", text: "お探しのページは存在しないか、移動した可能性があります。", back: "トップページへ戻る" },
   },
   en: {
     lang: "en",
-    nav: { profile: "Profile", books: "Works", news: "News", media: "Media", events: "Events", contact: "Contact" },
+    nav: { profile: "Profile", books: "Works", news: "News", media: "Media", events: "Events", shop: "Shop", contact: "Contact" },
     footer: { role: "Picture Book Author" },
     home: {
       role: "PICTURE BOOK AUTHOR",
@@ -260,11 +265,16 @@ export const dict = {
       privacy: "Personal information submitted will only be used to respond to your inquiry and will not be shared with third parties.",
       submit: "Send", categories: contactCategories.en,
     },
+    shop: {
+      section: "SHOP", heading: "Online Shop",
+      buy: "Buy Now", comingSoon: "Coming Soon", soldOut: "Sold Out",
+      note: "* Checkout is powered by Square. Opens in a new window.",
+    },
     notFound: { code: "404", heading: "Page Not Found", text: "The page you are looking for does not exist or may have moved.", back: "Back to Top" },
   },
   zh: {
     lang: "zh",
-    nav: { profile: "简介", books: "作品", news: "新闻", media: "媒体", events: "活动", contact: "联系" },
+    nav: { profile: "简介", books: "作品", news: "新闻", media: "媒体", events: "活动", shop: "商店", contact: "联系" },
     footer: { role: "绘本作家" },
     home: {
       role: "绘本作家",
@@ -315,11 +325,16 @@ export const dict = {
       privacy: "您提交的个人信息仅用于回复您的咨询，不会提供给第三方。",
       submit: "发送", categories: contactCategories.zh,
     },
+    shop: {
+      section: "商店", heading: "网络商店",
+      buy: "立即购买", comingSoon: "即将上线", soldOut: "售罄",
+      note: "※ 结账由Square提供服务。将在新窗口中打开。",
+    },
     notFound: { code: "404", heading: "页面不存在", text: "您访问的页面不存在或已移动。", back: "返回首页" },
   },
   tw: {
     lang: "tw",
-    nav: { profile: "簡介", books: "作品", news: "新聞", media: "媒體", events: "活動", contact: "聯繫" },
+    nav: { profile: "簡介", books: "作品", news: "新聞", media: "媒體", events: "活動", shop: "商店", contact: "聯繫" },
     footer: { role: "繪本作家" },
     home: {
       role: "繪本作家",
@@ -370,11 +385,16 @@ export const dict = {
       privacy: "您提交的個人資訊僅用於回覆您的諮詢，不會提供給第三方。",
       submit: "發送", categories: contactCategories.tw,
     },
+    shop: {
+      section: "商店", heading: "網路商店",
+      buy: "立即購買", comingSoon: "即將上線", soldOut: "售罄",
+      note: "※ 結帳由Square提供服務。將在新視窗中開啟。",
+    },
     notFound: { code: "404", heading: "頁面不存在", text: "您訪問的頁面不存在或已移動。", back: "返回首頁" },
   },
   ko: {
     lang: "ko",
-    nav: { profile: "프로필", books: "작품", news: "뉴스", media: "미디어", events: "이벤트", contact: "문의" },
+    nav: { profile: "프로필", books: "작품", news: "뉴스", media: "미디어", events: "이벤트", shop: "쇼핑", contact: "문의" },
     footer: { role: "그림책 작가" },
     home: {
       role: "그림책 작가",
@@ -425,11 +445,16 @@ export const dict = {
       privacy: "입력하신 개인정보는 문의 답변에만 사용하며 제3자에게 제공하지 않습니다.",
       submit: "보내기", categories: contactCategories.ko,
     },
+    shop: {
+      section: "쇼핑", heading: "온라인 샵",
+      buy: "구매하기", comingSoon: "준비 중", soldOut: "품절",
+      note: "※ 결제는 Square 서비스를 이용합니다. 새 창에서 열립니다.",
+    },
     notFound: { code: "404", heading: "페이지를 찾을 수 없습니다", text: "찾으시는 페이지가 없거나 이동되었을 수 있습니다.", back: "홈으로 돌아가기" },
   },
   es: {
     lang: "es",
-    nav: { profile: "Perfil", books: "Obras", news: "Noticias", media: "Medios", events: "Eventos", contact: "Contacto" },
+    nav: { profile: "Perfil", books: "Obras", news: "Noticias", media: "Medios", events: "Eventos", shop: "Tienda", contact: "Contacto" },
     footer: { role: "Autora de Álbumes Ilustrados" },
     home: {
       role: "AUTORA DE ÁLBUMES ILUSTRADOS",
@@ -480,11 +505,16 @@ export const dict = {
       privacy: "La información personal enviada solo se utilizará para responder a su consulta y no se compartirá con terceros.",
       submit: "Enviar", categories: contactCategories.es,
     },
+    shop: {
+      section: "TIENDA", heading: "Tienda Online",
+      buy: "Comprar", comingSoon: "Próximamente", soldOut: "Agotado",
+      note: "* El pago es procesado por Square. Se abre en una nueva ventana.",
+    },
     notFound: { code: "404", heading: "Página no encontrada", text: "La página que busca no existe o puede haber sido movida.", back: "Volver al inicio" },
   },
   vi: {
     lang: "vi",
-    nav: { profile: "Hồ sơ", books: "Tác phẩm", news: "Tin tức", media: "Truyền thông", events: "Sự kiện", contact: "Liên hệ" },
+    nav: { profile: "Hồ sơ", books: "Tác phẩm", news: "Tin tức", media: "Truyền thông", events: "Sự kiện", shop: "Cửa hàng", contact: "Liên hệ" },
     footer: { role: "Tác giả Tranh truyện" },
     home: {
       role: "TÁC GIẢ TRANH TRUYỆN",
@@ -534,6 +564,11 @@ export const dict = {
       message: "Nội dung", messagePlaceholder: "Vui lòng mô tả chi tiết yêu cầu của bạn.",
       privacy: "Thông tin cá nhân được gửi chỉ được sử dụng để trả lời yêu cầu của bạn và sẽ không được chia sẻ với bên thứ ba.",
       submit: "Gửi", categories: contactCategories.vi,
+    },
+    shop: {
+      section: "CỬA HÀNG", heading: "Cửa hàng trực tuyến",
+      buy: "Mua ngay", comingSoon: "Sắp có", soldOut: "Hết hàng",
+      note: "* Thanh toán được xử lý bởi Square. Mở trong cửa sổ mới.",
     },
     notFound: { code: "404", heading: "Không tìm thấy trang", text: "Trang bạn đang tìm kiếm không tồn tại hoặc có thể đã bị di chuyển.", back: "Quay lại trang chủ" },
   },
