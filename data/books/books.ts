@@ -10,6 +10,7 @@ export type Book = {
   description: string;
   descriptionEn: string;
   awards: string[];
+  awardsEn: string[];
   tags: string[];
   links: {
     publisherPage?: string;
@@ -41,6 +42,15 @@ export const books: Book[] = [
       "第17回MOE絵本屋さん大賞2024 新人賞 第1位",
       "第1回みんなのよみきかせ絵本大賞（園児さんと先生でえらぶ！よみきかせ絵本部門）第3位",
     ],
+    awardsEn: [
+      "43rd Kodansha Picture Book New Author Award, Winner",
+      "16th MOE Bookstore Picture Book Award 2023, New Author 3rd Place",
+      "15th Libro Picture Book Award, Selected",
+      "15th Yochien Picture Book Grand Prize, Winner",
+      "8th Miraiya Ehon Grand Prize, Winner",
+      "17th MOE Bookstore Picture Book Award 2024, New Author 1st Place",
+      "1st Minna no Yomikikase Ehon Award, 3rd Place",
+    ],
     tags: ["3〜5歳", "ユーモア", "食べ物"],
     links: {
       publisherPage: "https://www.kodansha.co.jp/book/products/0000377277",
@@ -62,6 +72,7 @@ export const books: Book[] = [
     descriptionEn:
       "A mysterious new neighbor has moved into Tenshin Heights: 'Hello, I'm the gyoza who just moved in next door.' Once a regular TV commentator, the gyoza has suddenly vanished from screens. Where has the gyoza gone, and who is the mysterious neighbor?",
     awards: [],
+    awardsEn: [],
     tags: ["3〜5歳", "ユーモア", "食べ物"],
     links: {
       publisherPage: "https://www.kodansha.co.jp/book/products/0000412714",
@@ -85,6 +96,9 @@ export const books: Book[] = [
     awards: [
       "第18回MOE絵本屋さん大賞2025 第21位",
     ],
+    awardsEn: [
+      "18th MOE Bookstore Picture Book Award 2025, 21st Place",
+    ],
     tags: ["幼児〜小学低学年", "ユーモア", "食べ物", "写真絵本"],
     links: {
       publisherPage: "https://www.hakusensha.co.jp/booklist/75517/",
@@ -105,6 +119,7 @@ export const books: Book[] = [
     descriptionEn:
       "A mysterious drawstring pouch chases down anything connected by a shiritori word chain, swallowing them up one by one. A playful guessing-game picture book that sparks children's love of language.",
     awards: [],
+    awardsEn: [],
     tags: ["幼児〜小学低学年", "言葉遊び", "ユーモア"],
     links: {
       publisherPage: "https://www.kadokawa.co.jp/product/322511000526/",

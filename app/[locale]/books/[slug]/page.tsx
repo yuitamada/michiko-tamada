@@ -87,7 +87,7 @@ export default async function BookDetailPage({ params }: Props) {
           <div className="mb-10">
             <p className="text-[10px] tracking-[0.2em] font-light mb-4" style={{ color: "var(--muted)" }}>{b.synopsis}</p>
             <p className="text-sm font-light leading-loose" style={{ lineHeight: "2" }}>
-              {locale === "en" ? book.descriptionEn : book.description}
+              {locale !== "ja" ? book.descriptionEn : book.description}
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export default async function BookDetailPage({ params }: Props) {
             <div>
               <p className="text-[10px] tracking-[0.2em] font-light mb-4" style={{ color: "var(--muted)" }}>{b.awards}</p>
               <ul className="space-y-2.5">
-                {book.awards.map((award) => (
+                {(locale !== "ja" ? book.awardsEn : book.awards).map((award) => (
                   <li key={award} className="flex items-start gap-3 text-sm font-light" style={{ lineHeight: "1.8" }}>
                     <span className="mt-1 w-1 h-1 rounded-full flex-shrink-0" style={{ backgroundColor: "var(--accent)", marginTop: "10px" }} />
                     {award}

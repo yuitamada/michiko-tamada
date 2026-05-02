@@ -120,7 +120,7 @@ export default async function HomePage({ params }: Props) {
                   {book.publisher}
                 </p>
                 <p className="text-sm font-light leading-loose" style={{ color: "var(--muted)", lineHeight: "1.9" }}>
-                  {locale === "en" ? book.descriptionEn : book.description}
+                  {locale !== "ja" ? book.descriptionEn : book.description}
                 </p>
               </div>
             </div>

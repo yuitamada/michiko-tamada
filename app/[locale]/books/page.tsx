@@ -72,7 +72,7 @@ export default async function BooksPage({ params }: Props) {
                   <p className="text-lg font-medium tracking-wide mb-1">{book.title}</p>
                   <p className="text-xs font-light mb-4" style={{ color: "var(--muted)" }}>{book.publisher}</p>
                   <p className="text-sm font-light leading-loose" style={{ color: "var(--muted)", lineHeight: "1.9" }}>
-                    {locale === "en" ? book.descriptionEn : book.description}
+                    {locale !== "ja" ? book.descriptionEn : book.description}
                   </p>
                 </div>
               </div>
