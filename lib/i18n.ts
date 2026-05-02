@@ -158,7 +158,7 @@ export const dict = {
     footer: { role: "絵本作家" },
     home: {
       role: "絵本作家",
-      tagline: "子育てが一段落してから絵本作家を志し、2023年にデビュー。ユーモアと驚きに満ちた物語で、子どもたちを笑顔にする絵本を作り続けています。",
+      tagline: "2023年にデビュー。ユーモアと驚きに満ちた物語で、子どもたちを笑顔にする絵本を作り続けています。",
       profileLink: "プロフィール", worksLink: "作品を見る",
       publishedSection: "刊行作品", allWorks: "全作品を見る →",
       upcomingSection: "近刊予定", upcomingBadge: (date: string) => `${date} 刊行予定`,
@@ -218,7 +218,7 @@ export const dict = {
     footer: { role: "Picture Book Author" },
     home: {
       role: "PICTURE BOOK AUTHOR",
-      tagline: "After raising her children, Michiko Tamada pursued her lifelong dream of becoming a picture book author, debuting in 2023. She creates books filled with humor and surprise that bring smiles to children everywhere.",
+      tagline: "Michiko Tamada debuted as a picture book author in 2023. She creates books filled with humor and surprise that bring smiles to children everywhere.",
       profileLink: "Profile", worksLink: "View Works",
       publishedSection: "PUBLISHED WORKS", allWorks: "All Works →",
       upcomingSection: "UPCOMING", upcomingBadge: (date: string) => `Coming ${date}`,
@@ -278,7 +278,7 @@ export const dict = {
     footer: { role: "绘本作家" },
     home: {
       role: "绘本作家",
-      tagline: "在孩子们长大之后，玉田美知子开始追求成为绘本作家的梦想，于2023年正式出道。她创作充满幽默与惊喜的故事，让孩子们绽放笑颜。",
+      tagline: "玉田美知子于2023年正式出道为绘本作家。她创作充满幽默与惊喜的故事，让孩子们绽放笑颜。",
       profileLink: "简介", worksLink: "查看作品",
       publishedSection: "已出版作品", allWorks: "全部作品 →",
       upcomingSection: "即将出版", upcomingBadge: (date: string) => `${date} 出版`,
@@ -338,7 +338,7 @@ export const dict = {
     footer: { role: "繪本作家" },
     home: {
       role: "繪本作家",
-      tagline: "在孩子們長大之後，玉田美知子開始追求成為繪本作家的夢想，於2023年正式出道。她創作充滿幽默與驚喜的故事，讓孩子們綻放笑顏。",
+      tagline: "玉田美知子於2023年正式出道為繪本作家。她創作充滿幽默與驚喜的故事，讓孩子們綻放笑顏。",
       profileLink: "簡介", worksLink: "查看作品",
       publishedSection: "已出版作品", allWorks: "全部作品 →",
       upcomingSection: "即將出版", upcomingBadge: (date: string) => `${date} 出版`,
@@ -398,7 +398,7 @@ export const dict = {
     footer: { role: "그림책 작가" },
     home: {
       role: "그림책 작가",
-      tagline: "아이들이 자라고 난 후, 다마다 미치코는 그림책 작가가 되겠다는 꿈을 향해 나아가 2023년 데뷔했습니다. 유머와 놀라움으로 가득한 이야기로 아이들에게 미소를 선물하고 있습니다.",
+      tagline: "다마다 미치코는 2023년 그림책 작가로 데뷔했습니다. 유머와 놀라움으로 가득한 이야기로 아이들에게 미소를 선물하고 있습니다.",
       profileLink: "프로필", worksLink: "작품 보기",
       publishedSection: "출판된 작품", allWorks: "전체 작품 →",
       upcomingSection: "출판 예정", upcomingBadge: (date: string) => `${date} 출판 예정`,
@@ -458,7 +458,7 @@ export const dict = {
     footer: { role: "Autora de Álbumes Ilustrados" },
     home: {
       role: "AUTORA DE ÁLBUMES ILUSTRADOS",
-      tagline: "Después de criar a sus hijos, Michiko Tamada persiguió su sueño de ser autora de álbumes ilustrados y debutó en 2023. Crea historias llenas de humor y sorpresas que llenan de sonrisas a los niños.",
+      tagline: "Michiko Tamada debutó como autora de álbumes ilustrados en 2023. Crea historias llenas de humor y sorpresas que llenan de sonrisas a los niños.",
       profileLink: "Perfil", worksLink: "Ver Obras",
       publishedSection: "OBRAS PUBLICADAS", allWorks: "Todas las obras →",
       upcomingSection: "PRÓXIMAMENTE", upcomingBadge: (date: string) => `Publicación: ${date}`,
@@ -518,7 +518,7 @@ export const dict = {
     footer: { role: "Tác giả Tranh truyện" },
     home: {
       role: "TÁC GIẢ TRANH TRUYỆN",
-      tagline: "Sau khi nuôi dạy con cái, Michiko Tamada bắt đầu theo đuổi ước mơ trở thành tác giả tranh truyện và ra mắt năm 2023. Cô tạo ra những câu chuyện đầy hài hước và bất ngờ mang lại nụ cười cho trẻ em.",
+      tagline: "Michiko Tamada ra mắt với tư cách tác giả tranh truyện năm 2023. Cô tạo ra những câu chuyện đầy hài hước và bất ngờ mang lại nụ cười cho trẻ em.",
       profileLink: "Hồ sơ", worksLink: "Xem Tác phẩm",
       publishedSection: "TÁC PHẨM ĐÃ XUẤT BẢN", allWorks: "Tất cả tác phẩm →",
       upcomingSection: "SẮP RA MẮT", upcomingBadge: (date: string) => `Xuất bản: ${date}`,
