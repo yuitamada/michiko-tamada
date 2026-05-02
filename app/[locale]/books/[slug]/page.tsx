@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, locale } = await params;
   const book = books.find((b) => b.slug === slug);
   if (!book) return {};
-  return { title: book.title, description: locale === "en" ? book.descriptionEn : book.description };
+  return { title: book.title, description: book.descriptions[locale] ?? book.descriptions.en ?? book.descriptions.ja };
 }
 
 export default async function BookDetailPage({ params }: Props) {
@@ -87,7 +87,7 @@ export default async function BookDetailPage({ params }: Props) {
           <div className="mb-10">
             <p className="text-[10px] tracking-[0.2em] font-light mb-4" style={{ color: "var(--muted)" }}>{b.synopsis}</p>
             <p className="text-sm font-light leading-loose" style={{ lineHeight: "2" }}>
-              {locale !== "ja" ? book.descriptionEn : book.description}
+              {book.descriptions[locale] ?? book.descriptions.en ?? book.descriptions.ja}
             </p>
           </div>
 
@@ -122,11 +122,11 @@ export default async function BookDetailPage({ params }: Props) {
           )}
 
           {/* Awards */}
-          {book.awards.length > 0 && (
+          {(book.awards[locale] ?? book.awards.en ?? book.awards.ja).length > 0 && (
             <div>
               <p className="text-[10px] tracking-[0.2em] font-light mb-4" style={{ color: "var(--muted)" }}>{b.awards}</p>
               <ul className="space-y-2.5">
-                {(locale !== "ja" ? book.awardsEn : book.awards).map((award) => (
+                {(book.awards[locale] ?? book.awards.en ?? book.awards.ja).map((award) => (
                   <li key={award} className="flex items-start gap-3 text-sm font-light" style={{ lineHeight: "1.8" }}>
                     <span className="mt-1 w-1 h-1 rounded-full flex-shrink-0" style={{ backgroundColor: "var(--accent)", marginTop: "10px" }} />
                     {award}
