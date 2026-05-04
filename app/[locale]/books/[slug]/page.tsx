@@ -91,6 +91,17 @@ export default async function BookDetailPage({ params }: Props) {
             </p>
           </div>
 
+          {/* Preorder button for upcoming books */}
+          {book.upcoming && book.links.amazon && (
+            <div className="mb-10">
+              <a href={book.links.amazon} target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center text-xs tracking-widest font-light px-8 py-4 text-white transition-opacity duration-200 hover:opacity-80"
+                style={{ backgroundColor: "var(--accent)" }}>
+                {b.preorder}
+              </a>
+            </div>
+          )}
+
           {/* Links */}
           {(book.links.publisherPage || book.links.specialSite || book.links.amazon) && (
             <div className="mb-10">

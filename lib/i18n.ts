@@ -181,7 +181,7 @@ export const dict = {
       by: "著", publishDate: "刊行日", publishScheduled: "刊行予定",
       price: "定価", isbn: "ISBN", synopsis: "あらすじ", awards: "受賞・選出",
       links: "リンク", specialSite: "公式特設サイト ↗", publisherPage: "出版社ページ ↗",
-      amazon: "Amazon ↗", back: "← 作品一覧に戻る",
+      amazon: "Amazon ↗", preorder: "予約する ↗", back: "← 作品一覧に戻る",
     },
     news: {
       section: "お知らせ", heading: "お知らせ",
@@ -241,7 +241,7 @@ export const dict = {
       by: "by Michiko Tamada", publishDate: "Published", publishScheduled: "Expected",
       price: "Price", isbn: "ISBN", synopsis: "Synopsis", awards: "Awards",
       links: "Links", specialSite: "Official Site ↗", publisherPage: "Publisher Page ↗",
-      amazon: "Amazon ↗", back: "← Back to Works",
+      amazon: "Amazon ↗", preorder: "Pre-order ↗", back: "← Back to Works",
     },
     news: {
       section: "NEWS", heading: "News",
@@ -301,7 +301,7 @@ export const dict = {
       by: "玉田美知子 著", publishDate: "出版日期", publishScheduled: "预定出版",
       price: "定价", isbn: "ISBN", synopsis: "内容简介", awards: "获奖记录",
       links: "相关链接", specialSite: "官方特设网站 ↗", publisherPage: "出版社页面 ↗",
-      amazon: "Amazon ↗", back: "← 返回作品列表",
+      amazon: "Amazon ↗", preorder: "预购 ↗", back: "← 返回作品列表",
     },
     news: {
       section: "新闻", heading: "新闻",
@@ -361,7 +361,7 @@ export const dict = {
       by: "玉田美知子 著", publishDate: "出版日期", publishScheduled: "預定出版",
       price: "定價", isbn: "ISBN", synopsis: "內容簡介", awards: "獲獎紀錄",
       links: "相關連結", specialSite: "官方特設網站 ↗", publisherPage: "出版社頁面 ↗",
-      amazon: "Amazon ↗", back: "← 返回作品列表",
+      amazon: "Amazon ↗", preorder: "預購 ↗", back: "← 返回作品列表",
     },
     news: {
       section: "新聞", heading: "新聞",
@@ -421,7 +421,7 @@ export const dict = {
       by: "다마다 미치코 지음", publishDate: "출판일", publishScheduled: "출판 예정",
       price: "가격", isbn: "ISBN", synopsis: "줄거리", awards: "수상 경력",
       links: "링크", specialSite: "공식 특별 사이트 ↗", publisherPage: "출판사 페이지 ↗",
-      amazon: "Amazon ↗", back: "← 작품 목록으로",
+      amazon: "Amazon ↗", preorder: "예약하기 ↗", back: "← 작품 목록으로",
     },
     news: {
       section: "뉴스", heading: "뉴스",
@@ -481,7 +481,7 @@ export const dict = {
       by: "por Michiko Tamada", publishDate: "Publicado", publishScheduled: "Previsto",
       price: "Precio", isbn: "ISBN", synopsis: "Sinopsis", awards: "Premios",
       links: "Enlaces", specialSite: "Sitio oficial ↗", publisherPage: "Página editorial ↗",
-      amazon: "Amazon ↗", back: "← Volver a Obras",
+      amazon: "Amazon ↗", preorder: "Reservar ↗", back: "← Volver a Obras",
     },
     news: {
       section: "NOTICIAS", heading: "Noticias",
@@ -541,7 +541,7 @@ export const dict = {
       by: "Tác giả: Michiko Tamada", publishDate: "Ngày xuất bản", publishScheduled: "Dự kiến",
       price: "Giá", isbn: "ISBN", synopsis: "Tóm tắt", awards: "Giải thưởng",
       links: "Liên kết", specialSite: "Trang web chính thức ↗", publisherPage: "Trang nhà xuất bản ↗",
-      amazon: "Amazon ↗", back: "← Quay lại Tác phẩm",
+      amazon: "Amazon ↗", preorder: "Đặt trước ↗", back: "← Quay lại Tác phẩm",
     },
     news: {
       section: "TIN TỨC", heading: "Tin tức",

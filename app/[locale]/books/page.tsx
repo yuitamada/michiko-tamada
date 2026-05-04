@@ -60,7 +60,9 @@ export default async function BooksPage({ params }: Props) {
           </p>
           <div className="space-y-6">
             {upcoming.map((book) => (
-              <div key={book.slug} className="flex gap-8 p-8 rounded-sm" style={{ backgroundColor: "var(--accent-light)" }}>
+              <Link key={book.slug} href={`/${locale}/books/${book.slug}`}
+                className="flex gap-8 p-8 rounded-sm transition-opacity duration-200 hover:opacity-80"
+                style={{ backgroundColor: "var(--accent-light)" }}>
                 <div className="w-28 flex-shrink-0" style={{ boxShadow: "var(--shadow-md)" }}>
                   <Image src={book.coverImage} alt={book.title} width={112} height={150} className="w-full h-auto" />
                 </div>
@@ -75,7 +77,7 @@ export default async function BooksPage({ params }: Props) {
                     {book.descriptions[locale] ?? book.descriptions.en ?? book.descriptions.ja}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
