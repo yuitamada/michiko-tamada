@@ -20,18 +20,9 @@ export default async function HomePage({ params }: Props) {
         <p className="text-[10px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--muted)" }}>
           {d.home.role}
         </p>
-        <div className="flex items-center gap-8 mb-6">
-          <h1 className="text-5xl md:text-7xl font-light tracking-[0.12em] leading-tight">
-            玉田美知子
-          </h1>
-          <Image
-            src="/images/profile/tamadamichiko.jpg"
-            alt="たまだみちこ"
-            width={200}
-            height={200}
-            className="w-32 md:w-44 h-auto flex-shrink-0"
-          />
-        </div>
+        <h1 className="text-5xl md:text-7xl font-light tracking-[0.12em] mb-6 leading-tight">
+          玉田美知子
+        </h1>
         <p className="text-xs tracking-[0.2em] font-light mb-10" style={{ color: "var(--muted)" }}>
           MICHIKO TAMADA
         </p>
