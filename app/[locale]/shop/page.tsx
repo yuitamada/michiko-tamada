@@ -18,7 +18,7 @@ export default async function ShopPage({ params }: Props) {
 
   return (
     <div className="max-w-6xl mx-auto px-8 py-20">
-      <p className="text-[10px] tracking-[0.25em] font-light mb-3" style={{ color: "var(--muted)" }}>
+      <p className="text-[12px] tracking-[0.25em] font-light mb-3" style={{ color: "var(--muted)" }}>
         {d.shop.section}
       </p>
       <h1 className="text-2xl font-light tracking-widest mb-16" style={{ color: "var(--ink)" }}>
@@ -44,7 +44,7 @@ export default async function ShopPage({ params }: Props) {
                 />
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-[10px] tracking-widest" style={{ color: "var(--muted-light)" }}>
+                  <span className="text-[12px] tracking-widest" style={{ color: "var(--muted-light)" }}>
                     NO IMAGE
                   </span>
                 </div>
@@ -55,7 +55,7 @@ export default async function ShopPage({ params }: Props) {
             <p className="text-xs font-medium tracking-wide leading-snug mb-1">
               {isEn ? item.nameEn : item.name}
             </p>
-            <p className="text-[10px] font-light mb-3" style={{ color: "var(--muted)" }}>
+            <p className="text-[12px] font-light mb-3" style={{ color: "var(--muted)" }}>
               ¥{item.price.toLocaleString()}
             </p>
 
@@ -65,14 +65,14 @@ export default async function ShopPage({ params }: Props) {
                 href={item.squareUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto text-center text-[10px] tracking-widest font-light px-4 py-2.5 text-white transition-opacity duration-200 hover:opacity-80"
+                className="mt-auto text-center text-[12px] tracking-widest font-light px-4 py-2.5 text-white transition-opacity duration-200 hover:opacity-80"
                 style={{ backgroundColor: "var(--accent)" }}
               >
                 {d.shop.buy}
               </a>
             ) : (
               <span
-                className="mt-auto text-center text-[10px] tracking-widest font-light px-4 py-2.5"
+                className="mt-auto text-center text-[12px] tracking-widest font-light px-4 py-2.5"
                 style={{ backgroundColor: "var(--accent-light)", color: "var(--muted)" }}
               >
                 {d.shop.comingSoon}
@@ -82,7 +82,7 @@ export default async function ShopPage({ params }: Props) {
         ))}
       </div>
 
-      <p className="text-[10px] font-light" style={{ color: "var(--muted-light)" }}>
+      <p className="text-[12px] font-light" style={{ color: "var(--muted-light)" }}>
         {d.shop.note}
       </p>
     </div>

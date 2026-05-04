@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="max-w-6xl mx-auto px-8 py-32 text-center">
-      <p className="text-[10px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--muted)" }}>
+      <p className="text-[12px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--muted)" }}>
         404
       </p>
       <h1 className="text-3xl font-light tracking-widest mb-6" style={{ color: "var(--ink)" }}>

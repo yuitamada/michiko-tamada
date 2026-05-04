@@ -17,7 +17,7 @@ export default async function HomePage({ params }: Props) {
     <>
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-8 pt-24 pb-20">
-        <p className="text-[10px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--muted)" }}>
+        <p className="text-[12px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--muted)" }}>
           {d.home.role}
         </p>
         <h1 className="text-5xl md:text-7xl font-light tracking-[0.12em] mb-6 leading-tight">
@@ -51,12 +51,12 @@ export default async function HomePage({ params }: Props) {
       {/* Published books */}
       <section className="max-w-6xl mx-auto px-8 py-20">
         <div className="flex items-baseline justify-between mb-12">
-          <p className="text-[10px] tracking-[0.25em] font-light" style={{ color: "var(--muted)" }}>
+          <p className="text-[12px] tracking-[0.25em] font-light" style={{ color: "var(--muted)" }}>
             {d.home.publishedSection}
           </p>
           <Link
             href={`/${locale}/books`}
-            className="text-[10px] tracking-widest font-light transition-opacity duration-200 hover:opacity-60"
+            className="text-[12px] tracking-widest font-light transition-opacity duration-200 hover:opacity-60"
             style={{ color: "var(--muted)" }}
           >
             {d.home.allWorks}
@@ -84,7 +84,7 @@ export default async function HomePage({ params }: Props) {
               <p className="text-xs font-medium tracking-wide leading-snug group-hover:opacity-70 transition-opacity duration-200">
                 {book.title}
               </p>
-              <p className="text-[10px] font-light mt-1 tracking-wide" style={{ color: "var(--muted)" }}>
+              <p className="text-[12px] font-light mt-1 tracking-wide" style={{ color: "var(--muted)" }}>
                 {book.publisher}
               </p>
             </Link>
@@ -100,7 +100,7 @@ export default async function HomePage({ params }: Props) {
       {/* Upcoming */}
       {upcomingBooks.length > 0 && (
         <section className="max-w-6xl mx-auto px-8 py-20">
-          <p className="text-[10px] tracking-[0.25em] font-light mb-12" style={{ color: "var(--accent)" }}>
+          <p className="text-[12px] tracking-[0.25em] font-light mb-12" style={{ color: "var(--accent)" }}>
             {d.home.upcomingSection}
           </p>
           {upcomingBooks.map((book) => (
@@ -112,7 +112,7 @@ export default async function HomePage({ params }: Props) {
               </div>
               <div className="pt-1">
                 <span
-                  className="inline-block text-[10px] tracking-widest font-light px-3 py-1 mb-4"
+                  className="inline-block text-[12px] tracking-widest font-light px-3 py-1 mb-4"
                   style={{ backgroundColor: "var(--accent)", color: "white" }}
                 >
                   {d.home.upcomingBadge(book.publishedAt.slice(0, 7))}
@@ -133,12 +133,12 @@ export default async function HomePage({ params }: Props) {
       {/* News */}
       <section className="max-w-6xl mx-auto px-8 py-20">
         <div className="flex items-baseline justify-between mb-12">
-          <p className="text-[10px] tracking-[0.25em] font-light" style={{ color: "var(--muted)" }}>
+          <p className="text-[12px] tracking-[0.25em] font-light" style={{ color: "var(--muted)" }}>
             {d.home.newsSection}
           </p>
           <Link
             href={`/${locale}/news`}
-            className="text-[10px] tracking-widest font-light transition-opacity duration-200 hover:opacity-60"
+            className="text-[12px] tracking-widest font-light transition-opacity duration-200 hover:opacity-60"
             style={{ color: "var(--muted)" }}
           >
             {d.home.allNews}
@@ -153,11 +153,11 @@ export default async function HomePage({ params }: Props) {
                 className="flex items-start gap-8 py-5 transition-opacity duration-200 hover:opacity-60"
                 style={{ borderBottom: "1px solid var(--border)" }}
               >
-                <span className="text-[10px] tracking-widest font-light w-24 flex-shrink-0 pt-0.5" style={{ color: "var(--muted-light)" }}>
+                <span className="text-[12px] tracking-widest font-light w-24 flex-shrink-0 pt-0.5" style={{ color: "var(--muted-light)" }}>
                   {new Date(post.date).toLocaleDateString(locale === "en" ? "en-US" : "ja-JP")}
                 </span>
                 <span
-                  className="text-[10px] tracking-widest font-light px-2.5 py-1 flex-shrink-0 self-start"
+                  className="text-[12px] tracking-widest font-light px-2.5 py-1 flex-shrink-0 self-start"
                   style={{
                     backgroundColor:
                       post.category === "event" ? "#fef3c7"

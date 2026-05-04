@@ -20,14 +20,14 @@ export default async function BooksPage({ params }: Props) {
 
   return (
     <div className="max-w-6xl mx-auto px-8 py-20">
-      <p className="text-[10px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
+      <p className="text-[12px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
         {b.section}
       </p>
       <h1 className="text-3xl font-light tracking-widest mb-20">{b.heading}</h1>
 
       {/* Published */}
       <section className="mb-24">
-        <p className="text-[10px] tracking-[0.2em] font-light mb-10 pb-4"
+        <p className="text-[12px] tracking-[0.2em] font-light mb-10 pb-4"
           style={{ color: "var(--muted)", borderBottom: "1px solid var(--border)" }}>
           {b.published}
         </p>
@@ -41,8 +41,8 @@ export default async function BooksPage({ params }: Props) {
               <p className="text-xs font-medium tracking-wide leading-snug group-hover:opacity-60 transition-opacity">
                 {book.title}
               </p>
-              <p className="text-[10px] font-light mt-1.5" style={{ color: "var(--muted)" }}>{book.publisher}</p>
-              <p className="text-[10px] font-light" style={{ color: "var(--muted-light)" }}>
+              <p className="text-[12px] font-light mt-1.5" style={{ color: "var(--muted)" }}>{book.publisher}</p>
+              <p className="text-[12px] font-light" style={{ color: "var(--muted-light)" }}>
                 {new Date(book.publishedAt).toLocaleDateString(locale === "en" ? "en-US" : "ja-JP", { year: "numeric", month: "long" })}
                 {book.price != null && ` · ¥${book.price.toLocaleString()}`}
               </p>
@@ -54,7 +54,7 @@ export default async function BooksPage({ params }: Props) {
       {/* Upcoming */}
       {upcoming.length > 0 && (
         <section>
-          <p className="text-[10px] tracking-[0.2em] font-light mb-10 pb-4"
+          <p className="text-[12px] tracking-[0.2em] font-light mb-10 pb-4"
             style={{ color: "var(--accent)", borderBottom: "1px solid var(--border)" }}>
             {b.upcoming}
           </p>
@@ -67,7 +67,7 @@ export default async function BooksPage({ params }: Props) {
                   <Image src={book.coverImage} alt={book.title} width={112} height={150} className="w-full h-auto" />
                 </div>
                 <div>
-                  <span className="inline-block text-[10px] tracking-widest px-3 py-1 mb-4"
+                  <span className="inline-block text-[12px] tracking-widest px-3 py-1 mb-4"
                     style={{ backgroundColor: "var(--accent)", color: "white" }}>
                     {b.upcomingBadge(book.publishedAt.slice(0, 7))}
                   </span>

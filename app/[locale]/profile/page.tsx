@@ -17,7 +17,7 @@ export default async function ProfilePage({ params }: Props) {
 
   return (
     <div className="max-w-6xl mx-auto px-8 py-20">
-      <p className="text-[10px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
+      <p className="text-[12px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
         {p.section}
       </p>
       <h1 className="text-3xl font-light tracking-widest mb-20">{p.heading}</h1>
@@ -40,7 +40,7 @@ export default async function ProfilePage({ params }: Props) {
         <div className="flex-1 space-y-8">
           <div>
             <h2 className="text-2xl font-light tracking-widest">玉田美知子</h2>
-            <p className="text-[10px] tracking-[0.2em] font-light mt-1" style={{ color: "var(--muted)" }}>
+            <p className="text-[12px] tracking-[0.2em] font-light mt-1" style={{ color: "var(--muted)" }}>
               {p.nameEn}
             </p>
           </div>
@@ -50,14 +50,14 @@ export default async function ProfilePage({ params }: Props) {
 
           {/* History */}
           <div className="pt-4">
-            <p className="text-[10px] tracking-[0.2em] font-light mb-6 pb-3"
+            <p className="text-[12px] tracking-[0.2em] font-light mb-6 pb-3"
               style={{ color: "var(--muted)", borderBottom: "1px solid var(--border)" }}>
               {p.historyHeading}
             </p>
             <ul className="space-y-4">
               {p.history.map(({ year, text }) => (
                 <li key={year + text} className="flex gap-8 text-sm font-light">
-                  <span className="w-20 flex-shrink-0 text-[10px] tracking-widest pt-1" style={{ color: "var(--accent)" }}>
+                  <span className="w-20 flex-shrink-0 text-[12px] tracking-widest pt-1" style={{ color: "var(--accent)" }}>
                     {year}
                   </span>
                   <span style={{ lineHeight: "1.8" }}>{text}</span>
@@ -68,14 +68,14 @@ export default async function ProfilePage({ params }: Props) {
 
           {/* Awards */}
           <div>
-            <p className="text-[10px] tracking-[0.2em] font-light mb-6 pb-3"
+            <p className="text-[12px] tracking-[0.2em] font-light mb-6 pb-3"
               style={{ color: "var(--muted)", borderBottom: "1px solid var(--border)" }}>
               {p.awardsHeading}
             </p>
             <ul className="space-y-4">
               {p.awards.map(({ year, text }) => (
                 <li key={text} className="flex gap-8 text-sm font-light">
-                  <span className="w-20 flex-shrink-0 text-[10px] tracking-widest pt-1" style={{ color: "var(--muted-light)" }}>
+                  <span className="w-20 flex-shrink-0 text-[12px] tracking-widest pt-1" style={{ color: "var(--muted-light)" }}>
                     {year}
                   </span>
                   <span style={{ lineHeight: "1.8" }}>{text}</span>
@@ -88,7 +88,7 @@ export default async function ProfilePage({ params }: Props) {
 
       {/* Inquiry */}
       <div className="mt-24 p-10" style={{ backgroundColor: "var(--cream-deep)" }}>
-        <p className="text-[10px] tracking-[0.2em] font-light mb-4" style={{ color: "var(--muted)" }}>
+        <p className="text-[12px] tracking-[0.2em] font-light mb-4" style={{ color: "var(--muted)" }}>
           {p.inquiryHeading}
         </p>
         <p className="text-sm font-light leading-loose" style={{ lineHeight: "2" }}>

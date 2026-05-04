@@ -17,7 +17,7 @@ export default async function ContactPage({ params }: Props) {
 
   return (
     <div className="max-w-2xl mx-auto px-8 py-20">
-      <p className="text-[10px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
+      <p className="text-[12px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
         {c.section}
       </p>
       <h1 className="text-3xl font-light tracking-widest mb-6">{c.heading}</h1>
@@ -28,28 +28,28 @@ export default async function ContactPage({ params }: Props) {
       <form action="https://formspree.io/f/xkoyndko" method="POST" className="space-y-8">
         <input type="hidden" name="_next" value={`https://michikotamada.com/${locale}/contact/thanks`} />
         <div>
-          <label className="block text-[10px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
+          <label className="block text-[12px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
             {c.name} <span className="text-red-400">*</span>
           </label>
           <input type="text" name="name" required className={inputClass} style={inputStyle} />
         </div>
 
         <div>
-          <label className="block text-[10px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
+          <label className="block text-[12px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
             {c.org}
           </label>
           <input type="text" name="organization" className={inputClass} style={inputStyle} />
         </div>
 
         <div>
-          <label className="block text-[10px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
+          <label className="block text-[12px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
             {c.email} <span className="text-red-400">*</span>
           </label>
           <input type="email" name="email" required className={inputClass} style={inputStyle} />
         </div>
 
         <div>
-          <label className="block text-[10px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
+          <label className="block text-[12px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
             {c.category} <span className="text-red-400">*</span>
           </label>
           <select name="category" required className={inputClass + " appearance-none"} style={inputStyle}>
@@ -61,7 +61,7 @@ export default async function ContactPage({ params }: Props) {
         </div>
 
         <div>
-          <label className="block text-[10px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
+          <label className="block text-[12px] tracking-[0.2em] font-light mb-2.5" style={{ color: "var(--muted)" }}>
             {c.message} <span className="text-red-400">*</span>
           </label>
           <textarea name="message" required rows={7} placeholder={c.messagePlaceholder}

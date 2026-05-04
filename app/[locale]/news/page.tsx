@@ -23,7 +23,7 @@ export default async function NewsPage({ params }: Props) {
 
   return (
     <div className="max-w-6xl mx-auto px-8 py-20">
-      <p className="text-[10px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
+      <p className="text-[12px] tracking-[0.25em] font-light mb-4" style={{ color: "var(--muted)" }}>
         {d.news.section}
       </p>
       <h1 className="text-3xl font-light tracking-widest mb-20">{d.news.heading}</h1>
@@ -36,11 +36,11 @@ export default async function NewsPage({ params }: Props) {
               className="flex items-start gap-8 py-6 transition-opacity duration-200 hover:opacity-60"
               style={{ borderBottom: "1px solid var(--border)" }}
             >
-              <span className="text-[10px] tracking-widest font-light w-24 flex-shrink-0 pt-0.5" style={{ color: "var(--muted-light)" }}>
+              <span className="text-[12px] tracking-widest font-light w-24 flex-shrink-0 pt-0.5" style={{ color: "var(--muted-light)" }}>
                 {new Date(post.date).toLocaleDateString(locale === "en" ? "en-US" : "ja-JP")}
               </span>
               <span
-                className="text-[10px] tracking-widest font-light px-2.5 py-1 flex-shrink-0 self-start"
+                className="text-[12px] tracking-widest font-light px-2.5 py-1 flex-shrink-0 self-start"
                 style={{ backgroundColor: categoryColor[post.category] ?? "var(--accent-light)", color: "var(--muted)" }}
               >
                 {d.news.categories[post.category]}

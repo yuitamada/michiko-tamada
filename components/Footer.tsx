@@ -47,7 +47,7 @@ export default function Footer({ locale }: Props) {
       </div>
 
       <div className="max-w-6xl mx-auto px-8 pb-10">
-        <p className="text-[10px] tracking-widest font-light" style={{ color: "var(--muted-light)" }}>
+        <p className="text-[12px] tracking-widest font-light" style={{ color: "var(--muted-light)" }}>
           &copy; {new Date().getFullYear()} Michiko Tamada. All rights reserved.
         </p>
       </div>

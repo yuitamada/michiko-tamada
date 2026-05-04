@@ -36,14 +36,14 @@ export default async function EventsPage({ params }: Props) {
             style={{ borderBottom: "1px solid var(--border)" }}
           >
             <span
-              className="text-[10px] tracking-widest font-light w-24 flex-shrink-0 pt-0.5"
+              className="text-[12px] tracking-widest font-light w-24 flex-shrink-0 pt-0.5"
               style={{ color: "var(--muted-light)" }}
             >
               {new Date(item.date).toLocaleDateString(isEn ? "en-US" : "ja-JP")}
             </span>
 
             <span
-              className="text-[10px] tracking-widest font-light px-2.5 py-1 flex-shrink-0 self-start"
+              className="text-[12px] tracking-widest font-light px-2.5 py-1 flex-shrink-0 self-start"
               style={{ backgroundColor: typeColors[item.type] ?? "var(--accent-light)", color: "var(--muted)" }}
             >
               {d.events.types[item.type]}
@@ -76,7 +76,7 @@ export default async function EventsPage({ params }: Props) {
 
   return (
     <div className="max-w-6xl mx-auto px-8 py-20">
-      <p className="text-[10px] tracking-[0.25em] font-light mb-3" style={{ color: "var(--muted)" }}>
+      <p className="text-[12px] tracking-[0.25em] font-light mb-3" style={{ color: "var(--muted)" }}>
         {d.events.section}
       </p>
       <h1 className="text-2xl font-light tracking-widest mb-16" style={{ color: "var(--ink)" }}>
@@ -85,7 +85,7 @@ export default async function EventsPage({ params }: Props) {
 
       {upcoming.length > 0 && (
         <section className="mb-16">
-          <p className="text-[10px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--accent)" }}>
+          <p className="text-[12px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--accent)" }}>
             {d.events.upcoming}
           </p>
           <EventList items={upcoming} />
@@ -94,7 +94,7 @@ export default async function EventsPage({ params }: Props) {
 
       {past.length > 0 && (
         <section>
-          <p className="text-[10px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--muted)" }}>
+          <p className="text-[12px] tracking-[0.25em] font-light mb-8" style={{ color: "var(--muted)" }}>
             {d.events.past}
           </p>
           <EventList items={past} />

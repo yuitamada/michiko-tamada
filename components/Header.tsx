@@ -56,7 +56,7 @@ export default function Header({ locale }: Props) {
           <div />
         ) : (
           <Link href={`/${locale}`} className="flex flex-col justify-center gap-0.5">
-            <span className="text-[10px] tracking-[0.2em] font-light" style={{ color: "var(--muted)" }}>
+            <span className="text-[12px] tracking-[0.2em] font-light" style={{ color: "var(--muted)" }}>
               MICHIKO TAMADA
             </span>
             <span className="text-base font-medium tracking-widest leading-none">玉田美知子</span>
@@ -86,7 +86,7 @@ export default function Header({ locale }: Props) {
           <div ref={langRef} className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className="text-[10px] tracking-[0.2em] font-light px-3 py-1.5 transition-colors duration-200"
+              className="text-[12px] tracking-[0.2em] font-light px-3 py-1.5 transition-colors duration-200"
               style={{ border: "1px solid var(--border)", color: "var(--muted)" }}
             >
               {langShort[locale]}
@@ -101,7 +101,7 @@ export default function Header({ locale }: Props) {
                     key={l}
                     href={getLocalePath(l)}
                     onClick={() => setLangOpen(false)}
-                    className="block px-4 py-2.5 text-[10px] tracking-widest font-light transition-opacity duration-200 hover:opacity-60"
+                    className="block px-4 py-2.5 text-[12px] tracking-widest font-light transition-opacity duration-200 hover:opacity-60"
                     style={{
                       color: l === locale ? "var(--accent)" : "var(--muted)",
                       borderBottom: "1px solid var(--border-light)",
@@ -156,7 +156,7 @@ export default function Header({ locale }: Props) {
                   key={l}
                   href={getLocalePath(l)}
                   onClick={() => setOpen(false)}
-                  className="text-[10px] tracking-widest font-light px-2.5 py-1"
+                  className="text-[12px] tracking-widest font-light px-2.5 py-1"
                   style={{
                     border: "1px solid var(--border)",
                     color: l === locale ? "var(--accent)" : "var(--muted)",
