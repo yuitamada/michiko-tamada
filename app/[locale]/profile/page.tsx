@@ -39,7 +39,16 @@ export default async function ProfilePage({ params }: Props) {
         {/* Bio */}
         <div className="flex-1 space-y-8">
           <div>
-            <h2 className="text-2xl font-light tracking-widest">玉田美知子</h2>
+            <div className="flex items-center gap-6">
+              <h2 className="text-2xl font-light tracking-widest">玉田美知子</h2>
+              <Image
+                src="/images/profile/tamadamichiko.jpg"
+                alt="たまだみちこ"
+                width={160}
+                height={160}
+                className="w-28 h-auto"
+              />
+            </div>
             <p className="text-[10px] tracking-[0.2em] font-light mt-1" style={{ color: "var(--muted)" }}>
               {p.nameEn}
             </p>
