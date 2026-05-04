@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     template: "%s | 玉田美知子",
   },
   description: "絵本作家・玉田美知子の公式サイト。作品情報、プロフィール、イベント情報、お問い合わせ。",
+  keywords: ["玉田美知子", "たまだみちこ", "Michiko Tamada", "絵本作家", "絵本", "ぎょうざがいなくなりさがしています", "しりとりきんちゃく", "ギリギリオニギリーズ"],
   openGraph: {
     type: "website",
     locale: "ja_JP",
@@ -31,16 +32,53 @@ export const metadata: Metadata = {
   },
   alternates: {
     languages: {
+      "x-default": "/ja",
       ja: "/ja",
       en: "/en",
+      "zh-Hans": "/zh",
+      "zh-Hant": "/tw",
+      ko: "/ko",
+      es: "/es",
+      vi: "/vi",
     },
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${baseUrl}/#person`,
+      name: "玉田美知子",
+      alternateName: ["Michiko Tamada", "たまだみちこ"],
+      url: baseUrl,
+      jobTitle: "絵本作家",
+      description: "絵本作家・玉田美知子。講談社、白泉社、KADOKAWAより作品を刊行。",
+      sameAs: [
+        "https://x.com/ubaukya",
+        "https://www.instagram.com/michiko_tamada/",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${baseUrl}/#website`,
+      url: baseUrl,
+      name: "玉田美知子 公式サイト",
+      author: { "@id": `${baseUrl}/#person` },
+      inLanguage: ["ja", "en", "zh", "ko", "es", "vi"],
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja" suppressHydrationWarning>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-F81TQ1M1RW" />
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
