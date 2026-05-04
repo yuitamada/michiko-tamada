@@ -36,12 +36,6 @@ export default async function BookDetailPage({ params }: Props) {
       <div className="mt-14 flex flex-col md:flex-row gap-16">
         {/* Cover */}
         <div className="flex-shrink-0">
-          {book.upcoming && (
-            <span className="inline-block text-[10px] tracking-widest font-light px-3 py-1 mb-5"
-              style={{ backgroundColor: "var(--accent)", color: "white" }}>
-              {b.upcomingBadge(book.publishedAt.slice(0, 7))}
-            </span>
-          )}
           <div style={{ boxShadow: "var(--shadow-md)", display: "inline-block" }}>
             <Image src={book.coverImage} alt={book.title} width={224} height={300} className="block w-56 h-auto" priority />
           </div>
@@ -49,6 +43,12 @@ export default async function BookDetailPage({ params }: Props) {
 
         {/* Info */}
         <div className="flex-1">
+          {book.upcoming && (
+            <span className="inline-block text-[10px] tracking-widest font-light px-3 py-1 mb-5"
+              style={{ backgroundColor: "var(--accent)", color: "white" }}>
+              {b.upcomingBadge(book.publishedAt.slice(0, 7))}
+            </span>
+          )}
           <h1 className="text-3xl font-light tracking-widest mb-2">{book.title}</h1>
           <p className="text-xs font-light tracking-widest mb-10" style={{ color: "var(--muted)" }}>{b.by}</p>
 
